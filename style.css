@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 12px;   
+    font-family: 'Montserrat', sans-serif;
+    /* line-height: 1.5; */
+}
+
+img{
+    width: 300px;
+}
+
+.container{
+    display: flex;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.content{
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+}
+
+#h3{
+    color: hsl(60, 4%, 56%);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 35px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+article h3{
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+
+div p{
+    color: hsl(228, 12%, 48%);
+}
+#span{
+    text-decoration: line-through;
+    color: hsl(228, 45%, 44%);
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+#icon-cart{
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+button:hover{
+    background-color: hsl(158, 42%, 18%); 
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .container{
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+}
